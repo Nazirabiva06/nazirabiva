@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.social-icons{
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	
+}
+.social-icons a{
+	height: 80px;
+	width: 80px;
+	background-color: #f67c92;
+	border-radius: 30px;
+	text-align: center;
+	margin: 10px;
+	line-height: 90px;
+	box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.social-icons a i{
+	font-size: 30px;
+}

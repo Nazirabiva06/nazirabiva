@@ -1,0 +1,159 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function valid()
+		{
+			var erm="";
+			var name=null;
+			//name
+			name=document.getElementById('textname').value;
+			if(name=="")
+				erm+="Name field is empty\n";
+			//fathername
+			name=document.getElementById('FathersName').value;
+			if(name=="")
+				erm+="Fathers Name field is empty\n";
+			//mothersname
+			name=document.getElementById('mothersName').value;
+			if(name=="")
+				erm+="Mother Name field is empty\n";
+
+			//date of birth
+			name=document.getElementById('dateofbirth').value;
+			if(name=="")
+				erm+="DOB field is empty\n";
+			//contactno
+			name=document.getElementById('contactno').value;
+			if(name=="")
+				erm+="Contact No. field is empty\n";
+			//email
+			name=document.getElementById('email').value;
+			if(name=="")
+				erm+="E-mail name field is empty\n";
+			//address
+			name=document.getElementById('address').value;
+			if(name=="")
+				erm+="Address field is empty\n";
+
+
+
+
+			if(erm!="")
+			{
+				alert(erm);
+				return false;
+			}
+
+			else
+				return true;
+		}
+
+			
+			
+
+
+		
+	</script>
+</head>
+<body bgcolor="lightpink">
+	<h1><marquee><font color="black">Information Form</h1></marquee>
+		<center>
+			Created by<br>Nazira Biva<br>
+			<a href="#">E-mail : nazirabiva111@gmail.com</a><br>
+
+		</center>
+		<form id="f1" name="form1" onsubmit="return valid();" method="get">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td>:</td>
+					<td><input type="text" id="textname"></td>
+				</tr>
+				<tr>
+					<td>Father's Name</td>
+					<td>:</td>
+					<td><input type="text" Name="FathersName" id="FathersName"></td>
+
+				</tr>
+				<tr>
+					<td>Mother's Name</td>
+					<td>:</td>
+					<td><input type="text" Name="mothersName" id="mothersName"></td>
+				</tr>
+					<tr>
+					<td>Date of Birth</td>
+					<td>dd-mm-yyyy</td>
+					<td><input type="text" Name="dateofbirth" id="dateofbirth"></td>
+					
+				</tr>
+				<tr>
+					<td>Contact number</td>
+					<td>:</td>
+					<td><input type="text" id="contactno"></td>
+					
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td>:</td>
+					<td><input type="text" id="email"></td>
+					
+				</tr>
+				<td>Religion</td>
+				<td>:</td>
+				<td><select name="rel">
+					<option selected="selected">select religion</option>
+					<option>Islam</option>
+					<option>Hindu</option>
+                    <option>Buddho</option>
+                    <option>Christian</option>
+                </select>
+            </td>
+
+
+
+
+				</tr>
+				<tr>
+					<td>Material Status</td>
+					<td>:</td>
+					<td><input type="radio" name="maretial" value="Married">Married</td>
+					<td><input type="radio" name="maretial" value="Un-married">Un-married</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>:</td>
+					<td><input type="radio" name="gender" value="Male">Male</td>
+					<td><input type="radio" name="gender" value="Female">Female</td>
+					
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td>:</td>
+					<td><select name="coun">
+						<option selected="selected">select country</option>
+						<option>Bangladesh</option>
+						<option>India</option>
+						<option>Pakistan</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td>Present Address</td><td> :</td>
+					<td colspan="4"><textarea cols="30" rows="4" id="address"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="send"></td>
+					<td><input type="submit" value="Insert"></td>
+					<td><input type="submit" value="Delete"></td>
+				</tr>
+			</table>
+		</form>
+
+
+</body>
+</html>

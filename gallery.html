@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sstyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div class="full-img" id="fullImgBox">
+        <img src="image/art1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="image-gallery">
+    
+    <img src="image/art1.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art2.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art3.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art5.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art6.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art7.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art8.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art9.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art13.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art11.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art12.jpg" onclick="openFullImg(this.src)">
+    <img src="image/art14.jpg" onclick="openFullImg(this.src)">
+    
+    
+</div>
+<script type="text/javascript">
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+        // body...
+    }
+
+    function closeFullImg() {
+        fullImgBox.style.display = "none"
+        // body...
+    }
+</script>
+
+
+
+    <nav>
+
+        <label for="btn" class="button">Drop down
+        <span class="fas fa-caret-down"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+        <label for="btn-2" class="first"><a href="product.html">Product
+        <span class="fas fa-caret-down"></span> 
+        </label></a>
+        <input type="checkbox" id="btn-2">
+        <ul>
+        <li><a href="#">Crochet Scarf</a></li>
+        <li><a href="neck.html">Neck-cloth</a></li>
+        <li><a href="prayer.html">Prayer-cap</a></li>
+        <li><a href="babyhat.html">Baby-shoes</a></li>
+        <li><a href="choyetar.html">Crochet-choyetar</a></li>
+        <li><a href="table.html">Table-mate</a></li>
+        <li><a href="#">Door-mat</a></li>
+    </ul>
+</li>
+<li>
+    <label for="btn-3" class="second"><a href="about us.html">About Me
+        <span class="fas fa-caret-down"></span>
+    </label></a>
+    <input type="checkbox" id="btn-3">
+    <ul>
+        <li><a href="address.html">Address</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+    </nav>
+</body>
+</html>

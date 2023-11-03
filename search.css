@@ -1,0 +1,32 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box box-sizing: border-box;
+	font-family:'poppins', sans-serif;
+
+}
+.header-text{
+	max-width: 350px;
+	margin-top: 140px;
+}
+h1{
+	font-size: 34px;
+}
+.square{
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	background: #f67c92;
+	margin: 15px 0;
+}
+p{
+	font-size: 15px;
+	line-height: 18px;
+	color: black;
+	font-weight: bold;
+}
+.header-text button{
+	margin-top: 20px;
+	margin-bottom: 60px;
+}

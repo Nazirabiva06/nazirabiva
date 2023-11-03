@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins')
+
+*{
+	margin: 0;
+	padding: 0;
+	box box-sizing: border-box;
+	font-family:'poppins', sans-serif;
+
+}
+#header{
+	height: 100vh;
+	background-image: url(image/background.png);
+	background-position: center;
+	background-size: cover;
+}
+.container{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.logo{
+	margin-top: 30px;
+	width: 200px;
+}
+.header-text{
+	max-width: 350px;
+	margin-top: 140px;
+}
+h1{
+	font-size: 34px;
+}
+.square{
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	background: #f67c92;
+	margin: 15px 0;
+}
+.common-btn{
+	padding: 18px 40px;
+	background: transparent;
+	outline: none;
+	border: 2px solid #f67c92;
+	font-weight: bold;
+	cursor: pointer;
+}
+p{
+	font-size: 15px;
+	line-height: 18px;
+	color: black;
+	font-weight: bold;
+}
+.header-text button{
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+.line-1{
+	width: 15px;
+	height: 15px;
+	background: #f67c92;
+	display: inline-block;
+}
+.line-2{
+	width: 80px;
+	height: 1px;
+	background: #f67c92;
+	display: inline-block;
+}
+.line-3{
+	width: 60px;
+	height: 1px;
+	background: #f67c92;
+	display: inline-block;
+}
+.line{
+	line-height: 8px;
+}
+
+
+
+nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+  width: 20%;
+  height: 30px;
+  background: #f67c92;
+  padding: 8px 25px;
+  z-index: 2;
+
+}
+
+
+
+nav label{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	display: block;
+	cursor: pointer;
+
+
+}
+nav ul{
+	position: absolute;
+	background: #f67c92;
+	list-style: none;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	border-radius: 5px;
+	display: none;
+	
+}
+[id^=btn]:checked + ul{
+	display: block;
+}
+nav .menu:before{
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	background: #f67c92;
+	right: 20px;
+	top: -10px;
+	transform: rotate(45deg);
+	z-index: -1;
+
+}
+nav ul li{
+	line-height: 40px;
+	padding: 8px 20px;
+	top: 70px;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+nav ul li label{
+	font-size: 18px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	
+}
+nav ul li a:hover,
+nav ul li label:hover{
+	color: cyan;
+}
+nav ul ul{
+	position: static;
+}
+nav ul ul li{
+	line-height: 30px;
+	padding-left: 30px;
+	border-bottom: none;
+}
+nav ul ul li a{
+	color: #e6e6e6;
+	font-size: 17px;
+}
+nav ul li span{
+	font-size: 20px;
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+input{
+	display: none;
+}
+
+
+
+
+
+.social-icons{
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	
+}
+.social-icons a{
+	height: 80px;
+	width: 80px;
+	background-color: #f67c92;
+	border-radius: 30px;
+	text-align: center;
+	margin: 10px;
+	line-height: 90px;
+	box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.social-icons a i{
+	font-size: 30px;
+}
+
